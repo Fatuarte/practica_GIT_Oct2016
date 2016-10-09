@@ -45,12 +45,13 @@ git reset 6b3f76c
 - **¿Qué comando o comandos utilizaste en el paso 28?** 
 
 *1) Volvemos al merge, primero un “git reflog” y luego un “git reset”:*
-bash-3.2$ git reflog
 
+git reflog
 
 git reset d9a57b0
 
 *2) Deshacemos el merge pero esta vez descartando los cambios:*
+
 git reset --hard 6b3f76c
 HEAD is now at 6b3f76c Volvemos a hacer commit de git-nuestro.md - PUNTO 26
 
