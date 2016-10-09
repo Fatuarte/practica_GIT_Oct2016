@@ -4,6 +4,7 @@
 git reset --hard HEAD~1
 
 Porque si queremos perder los cambios del working copy, tenemos que hacer el reset con —hard
+
  - **¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?**
 Primero utilicé un “git reflog” para ver en qué punto había realizado el paso anterior (el anterior, obvio…), y para ver la referencia:
 bash-3.2$ git reflog
@@ -14,7 +15,8 @@ e13303b HEAD@{3}: commit (initial): Añadimos git-nuestro.md al repositorio
 
 Segundo, tomando la referencia del paso al que debo volver, utilizo:
 git reset --hard 99e3c27
- - **El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?** 
+
+- **El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?** 
 El merge no causó ningún conflicto. No debía causarlo, pues el fichero era el mismo.
 
 - **El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?** 
@@ -25,7 +27,8 @@ No causó ningún conflicto.
 
 - **¿Qué comando o comandos utilizaste en el paso 25?**
 git log --graph --decorate
- - **El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?** 
+
+- **El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?** 
 Podríamos haberlo hecho, y haber incorporado igualmente los cambios realizados al archivo git-nuestro.md. No habríamos perdido nada.
 
 - **¿Qué comando o comandos utilizaste en el paso 27?** 
